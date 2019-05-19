@@ -1,0 +1,19 @@
+:root {
+    --TableOfContents-background-color: inherit;
+    --TableOfContents-text-color: inherit;
+    --TableOfContents-font-family: inherit;
+    --TableOfContents {
+        background-color: var(--TableOfContents-background-color);
+        color: var(--TableOfContents-text-color);
+        font-family: var(--TableOfContents-font-family);
+    }
+  }
+  
+  .TableOfContents {
+      @apply(--TableOfContents);
+  }
+
+  .TableOfContents--noOrderedList > ol > li {
+    @apply(--TableOfContents);
+    list-style-type: none;
+  }
